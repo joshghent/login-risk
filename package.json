@@ -1,6 +1,6 @@
 {
   "name": "login-risk",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "Offline suspicious-login checks for Node: new country, new IP and impossible travel, from the IP alone",
   "type": "module",
   "exports": {
@@ -9,7 +9,9 @@
       "default": "./dist/index.js"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "node --test src/*.test.ts",
@@ -42,5 +44,6 @@
     "@types/geoip-lite": "^1.4.4",
     "@types/node": "^22.10.0",
     "typescript": "^5.9.3"
-  }
+  },
+  "packageManager": "pnpm@11.10.0"
 }
