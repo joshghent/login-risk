@@ -1,0 +1,46 @@
+{
+  "name": "login-risk",
+  "version": "0.1.0",
+  "description": "Offline suspicious-login checks for Node: new country, new IP and impossible travel, from the IP alone",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test src/*.test.ts",
+    "prepublishOnly": "pnpm test && pnpm build"
+  },
+  "keywords": [
+    "login",
+    "security",
+    "suspicious-login",
+    "impossible-travel",
+    "account-takeover",
+    "geoip",
+    "risk-scoring",
+    "fraud"
+  ],
+  "author": "Josh Ghent <me@joshghent.com>",
+  "homepage": "https://github.com/joshghent/login-risk",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshghent/login-risk.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "dependencies": {
+    "geoip-lite": "^2.0.3"
+  },
+  "devDependencies": {
+    "@types/geoip-lite": "^1.4.4",
+    "@types/node": "^22.10.0",
+    "typescript": "^5.9.3"
+  }
+}
