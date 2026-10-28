@@ -1,6 +1,6 @@
 {
   "name": "login-risk",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Offline suspicious-login checks for Node: new country, new IP and impossible travel, from the IP alone",
   "type": "module",
   "exports": {
